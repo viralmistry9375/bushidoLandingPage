@@ -1,0 +1,13 @@
+<% current_item = "current-menu-item" %>
+<li class="<%= @site.slug == 'home' && current_item %>">
+  <a href="/" class="animsition-link">01. Home</a>
+</li>
+<li class="<%= @site.slug == 'about_us' && current_item %>">
+  <a href="/about_us">02. About Us</a>
+</li>
+<li class="<%= @site.slug == 'our_work' && current_item %>">
+  <a href="/our_work" class="animsition-link">03. Our Works</a>
+</li>
+<li class="<%= @site.slug == 'contact_us' && current_item %>">
+  <a href="/contact_us" class="animsition-link">04. Contact Us</a>
+</li>

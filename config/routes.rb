@@ -1,4 +1,4 @@
 Rails.application.routes.draw do
   root "sites#show"
-  get "/:id", to: "sites#show"
+  get "/:slug", to: "sites#show"
 end

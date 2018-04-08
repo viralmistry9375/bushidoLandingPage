@@ -1,0 +1,42 @@
+<!-- ************************ -->
+<!--   NAVBAR                 -->
+<!-- ************************ -->
+
+<div class="crazy-navbar">
+  <div class="container">
+
+    <div class="crazy-border"></div>
+
+    <div class="crazy-logo">
+      <img src="assets/images/bushido_logo.png" alt="crazy-logo">
+    </div>
+    <!-- End crazy-logo -->
+
+    <nav class="crazy-nav">
+      <ul class="sf-menu">
+        <%= render partial: 'nav_list' %>
+      </ul>
+    </nav>
+    <a href="#" class="open-menu">
+      <i class="burger-icon">
+        <i></i>
+      </i>
+    </a>
+  </div>
+  <!-- End container -->
+
+  <div class="container">
+    <div class="row">
+      <div class="mobile-menu-wrap">
+        <nav>
+          <ul class="list-none">
+            <%= render partial: 'nav_list' %>
+          </ul>
+        </nav>
+      </div>
+      <!-- End mobile-menu-wrap -->
+    </div>
+  </div>
+  <!-- End container -->
+
+</div>

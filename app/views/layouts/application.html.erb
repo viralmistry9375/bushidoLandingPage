@@ -4,12 +4,35 @@
     <title>BushidoLandingPage</title>
     <%= csrf_meta_tags %>
 
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.js"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body id="top">
-    <%= yield %>
+    <div class="animsition">
+
+      <!-- ************************ -->
+      <!--  GO TO TOP               -->
+      <!-- ************************ -->
+
+      <a href="#top" class="toTop">
+        <i class="fa fa-angle-up"></i>
+      </a>
+      <!-- ************************ -->
+      <!--   PAGE BORDER            -->
+      <!-- ************************ -->
+
+      <span class="frame-line animated top-frame"></span>
+      <span class="frame-line animated right-frame"></span>
+      <span class="frame-line animated bottom-frame"></span>
+      <span class="frame-line animated left-frame"></span>
+
+      <%= render partial: 'navbar' %>
+      <%= yield %>
+      <%= render partial: 'footer' %>
+    </div>
   </body>
 </html>

@@ -1,4 +1,4 @@
-sites = [{name: 'Home', code: 'HOM'}]
+sites = [{name: 'Home', code: 'HOM'}, {name: 'Our work', code: 'WORKS'}, {name: 'Work', code: 'WORK'}, { name: 'About us', code: 'ABOUT'}, { name: 'Contact us',  code: 'CONT'}]
 
 sites.each do |site|
   slug = site[:name].downcase.parameterize(separator: '_')

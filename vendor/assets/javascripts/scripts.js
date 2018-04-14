@@ -200,14 +200,6 @@ jQuery.noConflict()(function($) {
       textillate_text();
     });
 
-    $('#contact-form').on('submit', function(e) {
-      return form_to_ajax_request(
-        $(this),
-        ['email', 'name', 'message', 'phone'],
-        ['email', 'name', 'message', 'phone']
-      );
-    });
-
     function form_to_ajax_request(form_el, all_fields, required_fields) {
       var fields_values = [];
       var error = false;

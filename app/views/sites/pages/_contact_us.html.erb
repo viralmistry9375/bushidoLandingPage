@@ -102,65 +102,38 @@
       <div class="row">
         <div class="col-sm-8 col-sm-offset-2" data-sr="wait .2s">
 
-          <form
-            class="contact-form form-black"
-            id="contact-form"
-            action="send_email.php"
-            method="post"
-            data-all-fields-required-msg="All fields are required"
-            data-ajax-fail-msg="Ajax could not set the request"
-            data-success-msg="Email successfully sent.">
+          <%= form_tag(subscribe_users_path), class: 'contact-form form-black' do  %>
             <div class="col-sm-12 mb30">
               <div class="form-control">
-
-                <input
-                  class="contact-form-name"
-                  type="text"
-                  name="name"
-                  placeholder="Your name:">
+                <%= text_field_tag :first_name, nil, class: 'contact-form-name', placeholder: 'First Name...', required: true %>
                 <div class="line-input"></div>
-
               </div>
             </div>
-            <!-- End col-sm-12 -->
-            <div class="col-sm-12 mb30">
-              <div class="form-control">
 
-                <input
-                  class="contact-form-email"
-                  type="text"
-                  name="email"
-                  placeholder="Your email:">
-                <div class="line-input"></div>
+            <div class="form-control">
+              <%= text_field_tag :last_name, nil, class: 'contact-form-message', placeholder: 'Last Name...', required: true %>
+            </div>
 
+            <div class="form-control">
+              <%= email_field_tag :email, nil, class: 'contact-form-email', placeholder: 'Email...', required: true %>
+              <div class="ui left corner label">
+                <i class="asterisk icon"></i>
               </div>
             </div>
-            <!-- End col-sm-12 -->
-            <div class="col-sm-12 mb50">
-              <div class="form-control">
 
-                <textarea class="contact-form-message" name="message" placeholder="Message:"></textarea>
-                <div class="line-input"></div>
+          <% end %>
 
-              </div>
-            </div>
-            <!-- End col-sm-12 -->
-            <div class="col-sm-12">
-              <div class="text-center">
+          <div class="spacer-20"></div>
+          <button class="ui button btn-save-form inverted light-green large subscribe-btn disabled text-uppercase" data-url="<%= subscribe_users_path %>">
+            <i class="mail icon"></i>
+            Take Action
+          </button>
 
-                <button class="btn">
-                  <span>Submit<i class="fa fa-spin fa-spinner ajax-loader" style="display: none;"></i>
-                  </span>
-                </button>
-
-              </div>
-            </div>
             <!-- End  -->
             <div class="col-sm-12">
               <div class="text-center">
                 <p class="return-msg">&nbsp;</p>
               </div>
-
             </div>
           </form>
           <!-- End contact-form -->

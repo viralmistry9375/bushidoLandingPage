@@ -161,11 +161,11 @@ jQuery.noConflict()(function($) {
       });
 
       $('.typed-two').typed({
-        strings: ['creative', 'hard-working', 'useful', 'responsible'],
+        strings: ['Bushido', 'innovators', 'ambitious', 'the team you need'],
         typeSpeed: 50,
-        backSpeed: 20,
+        backSpeed: 30,
         loop: true,
-        backDelay: 2500,
+        backDelay: 3500,
         showCursor: false,
       });
     }

@@ -738,7 +738,8 @@ textarea:focus + .line-input {
 /*----------------------*/
 .title-home {
   background-size: cover;
-  padding-top: 330px;
+  padding-top: 310px;
+  padding-bottom: 220px;
   overflow: hidden;
   position: relative;
   background-position: center center;

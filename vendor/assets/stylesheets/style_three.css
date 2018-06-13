@@ -452,12 +452,17 @@ textarea:focus + .line-input {
 /*----------------------*/
 /*   06-MENU            */
 /*----------------------*/
+.changeColor {
+   background: rgb(44,45,47,.9)
+}
+
 .crazy-navbar {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   right: 0;
   z-index: 100;
+  transition: 0.6s all;
 }
 .crazy-navbar .container {
   position: relative;

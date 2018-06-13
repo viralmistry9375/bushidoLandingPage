@@ -14,3 +14,14 @@
 
 //= require_tree ../../../vendor/assets/javascripts
 //= require_tree .
+
+$(function() {
+   $(window).scroll(function () {
+      if ($(this).scrollTop() > 1060) {
+         $('.crazy-navbar').addClass('changeColor')
+      }
+      if ($(this).scrollTop() < 1060) {
+         $('.crazy-navbar').removeClass('changeColor')
+      }
+   });
+});

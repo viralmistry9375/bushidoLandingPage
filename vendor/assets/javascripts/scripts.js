@@ -161,7 +161,7 @@ jQuery.noConflict()(function($) {
       });
 
       $('.typed-two').typed({
-        strings: ['Bushido', 'innovators', 'ambitious', 'the team you need'],
+        strings: ['Bushido', 'innovation', 'disruption'],
         typeSpeed: 50,
         backSpeed: 30,
         loop: true,

@@ -364,8 +364,7 @@ textarea:focus + .line-input {
   left: 0;
   height: 100%;
   z-index: 1;
-  background-color:rgba(44, 45, 47, 0.9);
-  /*background-color: rgba(23, 23, 23, 0.8);*/
+  background-color:rgba(44, 45, 47, 0.7);
 }
 .overlay ~ .container {
   position: relative;
@@ -453,7 +452,7 @@ textarea:focus + .line-input {
 /*   06-MENU            */
 /*----------------------*/
 .changeColor {
-   background: rgb(44,45,47,.9)
+   background: rgb(44,45,47,.8)
 }
 
 .crazy-navbar {

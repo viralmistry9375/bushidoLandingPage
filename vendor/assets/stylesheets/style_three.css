@@ -457,6 +457,7 @@ textarea:focus + .line-input {
 }
 
 .crazy-navbar {
+  height: 90px;
   position: fixed;
   top: 0;
   left: 0;
@@ -469,7 +470,7 @@ textarea:focus + .line-input {
 }
 .crazy-logo {
   float: left;
-  line-height: 122px;
+  line-height: 80px;
   max-width: 280px;
 }
 .crazy-nav {
@@ -482,7 +483,7 @@ textarea:focus + .line-input {
   position: relative;
 }
 .sf-menu > li {
-  padding: 45px 0;
+  padding: 25px 0;
 }
 .sf-menu ul {
   position: absolute;
@@ -743,8 +744,8 @@ textarea:focus + .line-input {
 /*----------------------*/
 .title-home {
   background-size: cover;
-  padding-top: 310px;
-  padding-bottom: 100px;
+  padding-top: 210px;
+  padding-bottom: 40px;
   overflow: hidden;
   position: relative;
   background-position: center center;

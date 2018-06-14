@@ -2822,6 +2822,7 @@ h4.sub_title {
 .crazy-borderv2{
    border-bottom: 4px solid #e63946;
    max-width: 40px;
+   margin-left: 20px;
 }
 
 .title-over-images {
@@ -2840,4 +2841,15 @@ h4.sub_title {
   margin-left: 300px;
   opacity: .5;
   text-align: center;
+}
+
+.bushi-workflow {
+  padding-left: 80px;
+  padding-right: 80px;
+}
+
+.agile-diagram-sub-tex {
+  padding-bottom: 45px;
+  padding-left: 30px;
+  padding-right: 30px;
 }

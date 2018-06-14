@@ -416,7 +416,7 @@ textarea:focus + .line-input {
   bottom: 30px;
   right: 30px;
   font-size: 24px;
-  background-color: var(--secondary-color, #009985);
+  background-color: #e63946;
   color: #fff !important;
   overflow: hidden;
   text-align: center;
@@ -1166,8 +1166,8 @@ textarea:focus + .line-input {
 }
 .services-nav i {
   margin-right: 8px;
-  font-size: 22px;
-  color:  #161616;
+  font-size: 40px;
+  color: #e63946;
   cursor: pointer;
   transition: color 0.3s ease-in-out;
 }
@@ -1824,7 +1824,7 @@ ul.progress-bar li p {
 /*----------------------*/
 .footer-inner {
   padding: 90px 0;
-  background-color:  #161616;
+  background-color:  #2C2D2F;
   position: relative !important;
 }
 footer {
@@ -2850,6 +2850,15 @@ h4.sub_title {
 
 .agile-diagram-sub-tex {
   padding-bottom: 45px;
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.owl-item div.col-md-5 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.services-nav {
+  float: right;
 }

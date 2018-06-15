@@ -231,7 +231,7 @@ jQuery.noConflict()(function($) {
       data_query['ajax'] = true;
 
       //show ajax loader
-      showLoader(form_el);
+      // showLoader(form_el);
 
       //send the request
       $.ajax({

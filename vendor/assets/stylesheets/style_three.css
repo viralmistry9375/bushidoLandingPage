@@ -231,7 +231,6 @@ blockquote::after {
 }
 .btn::after {
   content: '';
-  /*background-color: #2C2D2F;*/
   top: 0;
   left: 0;
   right: 0;
@@ -743,7 +742,7 @@ textarea:focus + .line-input {
 /*----------------------*/
 .title-home {
   background-size: cover;
-  padding-top: 210px;
+  padding-top: 190px;
   padding-bottom: 40px;
   overflow: hidden;
   position: relative;
@@ -2773,17 +2772,7 @@ footer h2 {
 }
 
 
-/*.btn-red {
-  color: red;
-  border-color: red;
-}
-
-.btn-red:hover{
-  color: white;
-}*/
-
-
-.we-are{
+.we-are {
   color: white;
   text-transform: uppercase;
   font-size: 75px; font-weight: 400;
@@ -2837,8 +2826,8 @@ h4.sub_title {
   border-bottom: 2px solid #2C2D2F;
   padding-bottom: 25px;
   padding-top: 100px;
-  margin-right: 300px;
-  margin-left: 300px;
+/*  margin-right: 300px;
+  margin-left: 300px;*/
   opacity: .5;
   text-align: center;
 }
@@ -2864,7 +2853,7 @@ h4.sub_title {
 }
 
 div.col-md-3 img {
-  max-height: 150px;
+  max-height: 110px;
 }
 
 

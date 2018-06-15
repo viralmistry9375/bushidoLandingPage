@@ -24,4 +24,11 @@ $(function() {
          $('.crazy-navbar').removeClass('changeColor')
       }
    });
+
+   $('a').click(function(){
+   	debugger
+   	$('body').removeClass('fadeOut')
+   	$('body').addClass('fadeIn')
+   })
 });
+

@@ -1,4 +1,4 @@
-<div class="title-home jarallax" style="background-image: url(assets/images/land.jpg);">
+<div class="title-home jarallax" style="background-image: url(<%= asset_path 'land.jpg' %>);">
 
   <div class="overlay"></div>
   <!-- End overlay -->
@@ -16,7 +16,7 @@
          The next phase is here.
       </p>
       <div class="buttons mt40 mb50">
-        <a href="/our_work" class="btn line-hor" style="border: 2px solid white; color:white;">
+        <a href="#contact_us" class="btn line-hor" style="border: 2px solid white; color:white;">
           <span>Contact us</span>
         </a>
 
@@ -126,7 +126,7 @@
 
           <div class="owl-item">
             <div class="col-md-5">
-              <%= image_tag 'digital_currency' %>
+              <%= image_tag 'digital_currency.jpg' %>
             </div>
             <div class="col-md-6 col-md-offset-1">
               <h4 class="sub_title">01. Digital Currency
@@ -136,7 +136,7 @@
               </p>
 
               <div class="mt40">
-                <a href="/our_work" class="btn animsition-link line-hor">
+                <a href="#contact_us" class="btn line-hor">
                   <span>Contact us</span>
                 </a>
               </div>
@@ -147,7 +147,7 @@
 
           <div class="owl-item">
             <div class="col-md-5">
-              <%= image_tag 'financial_networks' %>
+              <%= image_tag 'financial_networks.jpg' %>
             </div>
             <div class="col-md-6 col-md-offset-1">
               <h4 class="sub_title">02. Blockchain Applications
@@ -158,8 +158,8 @@
               </p>
               
               <div class="mt40">
-                <a href="/our_work" class="btn animsition-link line-hor">
-                  <span>view works</span>
+                <a href="#contact_us" class="btn line-hor">
+                  <span>Contact us</span>
                 </a>
               </div>
 
@@ -169,7 +169,7 @@
 
           <div class="owl-item">
             <div class="col-md-5">
-              <%= image_tag 'blockchain_applications' %>
+              <%= image_tag 'blockchain_applications.jpg' %>
             </div>
             <div class="col-md-6 col-md-offset-1">
               <h4 class="sub_title">03. Financial Networks
@@ -180,8 +180,8 @@
               </p>
 
               <div class="mt40">
-                <a href="/our_work" class="btn animsition-link line-hor">
-                  <span>view works</span>
+                <a href="#contact_us" class="btn line-hor">
+                  <span>Contact us</span>
                 </a>
               </div>
 
@@ -239,7 +239,7 @@
 
           <div class="team-item sm-mb40">
             <div class="team-header">
-              <%= image_tag 'sam'  %>
+              <%= image_tag 'sam.jpg'  %>
               <div class="social-wrap">
                 <ul class="list-none">
                   <li>
@@ -277,7 +277,7 @@
 
           <div class="team-item sm-mb40">
             <div class="team-header">
-              <%= image_tag 'chris'  %>
+              <%= image_tag 'chris.jpg'  %>
               <div class="social-wrap">
                 <ul class="list-none">
                   <li>
@@ -314,7 +314,7 @@
 
           <div class="team-item sm-mb40">
             <div class="team-header">
-              <%= image_tag 'kevin'  %>
+              <%= image_tag 'kevin.jpg'  %>
               <div class="social-wrap">
                 <ul class="list-none">
                   <li>
@@ -353,7 +353,7 @@
 
           <div class="team-item sm-mb40">
             <div class="team-header">
-              <%= image_tag 'luis'  %>
+              <%= image_tag 'luis.jpg'  %>
               <div class="social-wrap">
                 <ul class="list-none">
                   <li>
@@ -389,7 +389,7 @@
 
           <div class="team-item sm-mb40">
             <div class="team-header">
-              <%= image_tag 'nicolas'  %>
+              <%= image_tag 'nicolas.jpg'  %>
               <div class="social-wrap">
                 <ul class="list-none">
                   <li>
@@ -427,7 +427,7 @@
 
           <div class="team-item sm-mb40">
             <div class="team-header">
-              <%= image_tag 'andres'  %>
+              <%= image_tag 'andres.jpg'  %>
               <div class="social-wrap">
                 <ul class="list-none">
                   <li>
@@ -470,12 +470,16 @@
 
   <!-- ************************ -->
   <!--   TESTIMONIAL            -->
+<<<<<<< HEAD
 
 
 <!-- 
+=======
+  <!-- ************************ -->
+>>>>>>> 9a75f19702a6e62858c5ab144de359c3a1e64273
   <section
     class="testimonial-wrap jarallax pt150 pb150"
-    style="background-image: url(assets/images/testimonial-bg2.png);">
+    style="background-image: url(<%= asset_path 'testimonial-bg2.png' %>);">
     <div class="overlay"></div>
     <div class="container-fluid">
       <div class="row">
@@ -484,7 +488,7 @@
           <div class="owl-item" data-sr>
 
             <div class="avatar-wrap">
-              <img src="assets/images/testimonial-01.png" alt="avatar">
+              <%= image_tag 'testimonial-01.png' %>
             </div>
 
             <h3>Diva span</h3>
@@ -500,7 +504,7 @@
           <div class="owl-item" data-sr>
 
             <div class="avatar-wrap">
-              <img src="assets/images/testimonial-02.png" alt="avatar">
+              <%= image_tag 'testimonial-02.png' %>
             </div>
 
             <h3>Paulo Aramella</h3>

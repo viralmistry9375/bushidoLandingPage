@@ -451,7 +451,7 @@ textarea:focus + .line-input {
 /*   06-MENU            */
 /*----------------------*/
 .changeColor {
-   background: rgb(44,45,47,.8)
+   background: rgba(44,45,47,.8)
 }
 
 .crazy-navbar {
@@ -2817,7 +2817,7 @@ h4.sub_title {
 .title-over-images {
   color: white;
   text-align: center;
-  opacity: .6
+  opacity: .6;
   margin-top: 10px;
   margin-bottom: 10px;
 }

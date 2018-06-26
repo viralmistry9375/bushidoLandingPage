@@ -451,7 +451,7 @@ textarea:focus + .line-input {
 /*   06-MENU            */
 /*----------------------*/
 .changeColor {
-   background: rgb(44,45,47,.8)
+   background: rgba(44,45,47,.8)
 }
 
 .crazy-navbar {

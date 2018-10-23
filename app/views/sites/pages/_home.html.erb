@@ -1,27 +1,42 @@
-<div class="title-home jarallax" style="background-image: url(assets/images/wallpaper-dev.jpg);">
+<div class="title-home jarallax" style="background-image: url(<%= asset_path 'land.jpg' %>);">
 
   <div class="overlay"></div>
   <!-- End overlay -->
 
   <div class="container">
 
-    <div class="text-left">
-      <h1 data-sr>We are
+    <div class="text-center pb50" >
+      <h4 data-sr style="" class='we-are'>We are
         <span class="color typed-two">&nbsp;</span>
-      </h1>
-      <em data-sr>Donec et purus iaculis, posuere ipsum sed, lobortis quam. Suspendisse potenti.
+      </h4>
+      <p class='text white'>We are entering a world that is fundamentally different than the one we know.
         <br>
-        Vestibulum accumsan sem sit amet leo finibus rutrum. Nulla sit amet
+        Economics and governance is changing. Institutions are shifting. People are listening.
         <br>
-        posuere arcu, sit amet porttitor nibh.</em>
-      <div class="buttons mt40 mb160">
-        <a href="/our_work" class="btn btn-white animsition-link" data-sr>
-          <span>view our works</span>
+         The next phase is here.
+      </p>
+      <div class="buttons mt40 mb50">
+        <a href="#contact_us" class="btn line-hor" style="border: 2px solid white; color:white;">
+          <span>Contact us</span>
         </a>
 
       </div>
     </div>
-
+    <div class="row" style="opacity: .6">
+      <div><p class="title-over-images"> We leverage several technologies </p> </div>
+      <div class="col-md-3 techno">
+        <%= image_tag 'bitcoin.png' %>
+      </div>
+      <div class="col-md-3 techno">
+        <%= image_tag 'lightning.png' %>
+      </div>
+      <div class="col-md-3 techno">
+        <%= image_tag 'ether.png' %>
+      </div>
+      <div class="col-md-3 techno">
+        <%= image_tag 'rsk.png' %>
+      </div>
+    </div>
   </div>
   <!-- End container -->
 
@@ -33,55 +48,38 @@
   <!--   SECTION FEATURES       -->
   <!-- ************************ -->
 
-  <section class="features pt100 pb100">
+  <section class="features pt150" id="about_us">
 
     <div class="container">
-      <div class="row">
-
-        <div class="feature-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-            <div class="item-head">
-              <i class="cr-diamond"></i>
-            </div>
-            <h6>creative design</h6>
-            <p>Pellentesque diam, vulputate vitae mollis a, mollis id nisi</p>
-          </div>
-        </div>
-        <!-- End features-item -->
-        <div class="feature-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-
-            <div class="item-head">
-              <i class="cr-magnifier"></i>
-            </div>
-            <h6>well organized</h6>
-            <p>Aliquam accumsan sapien diam dignissim scelerisque</p>
-          </div>
-        </div>
-        <!-- End features-item -->
-
-        <div class="feature-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-            <div class="item-head">
-              <i class="cr-gear"></i>
-            </div>
-            <h6>easy to customize</h6>
-            <p>Cum sociis natoque penatibus magnis dis parturient</p>
-          </div>
-        </div>
-        <!-- End features-item -->
-
-        <div class="feature-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-            <div class="item-head">
-              <i class="cr-star"></i>
-            </div>
-            <h6>support 24/7</h6>
-            <p>Maecenas vitae mollis porttitor metus in lobortis justo</p>
-          </div>
-        </div>
-        <!-- End features-item -->
+      <div class="title">
+        The Intellectual and Technological Powerhouse Creating Tomorrow.
       </div>
+        <div class="row pt70 pb50">
+          <div class="col-md-6 agile-diagram-text pt50" style="font-size: larger;">
+            <%= image_tag 'diagram_bushi.png' %>
+          </div>
+          <div class="col-md-6 bushi-workflow" >
+            <div class="agile-diagram-sub-tex">
+                <h4 class="sub_title"> Research & Planning
+                  <div class="crazy-borderv2"></div>
+                </h4>
+                <p class='text black'>We apply the rigor of the scientific method to the nascent space of cryptocurrency and blockchain, developing the infrastructure of the Web 3.0.</p>
+
+              </div>
+              <div class="agile-diagram-sub-tex">
+                <h4 class="sub_title"> Agile Development
+                  <div class="crazy-borderv2"></div>
+                 </h4>
+              <p class='text black'>Speed is our main tenant. We apply Agile methodologies to a novel environment to achieve project deliverables while creating the infrastructure on which they sit.</p>
+            </div>
+              <div class="agile-diagram-sub-tex">
+                <h4 class="sub_title"> Product Launch
+                  <div class="crazy-borderv2"></div>
+                </h4>
+                <p class='text black'>We are the intersection of a think tank and a products company. We ideate, we innovate and then we create.</p>
+              </div>
+          </div>
+        </div>
     </div>
     <!-- End container -->
 
@@ -91,77 +89,30 @@
   <!--   SECTION ABOUT          -->
   <!-- ************************ -->
 
-  <section class="pt50">
 
-    <div class="container">
-      <div class="row">
-
-        <div class="info-block-wrap clearfix">
-
-          <div
-            class="image-block col-md-7"
-            style="background-image: url(assets/images/index_three_about.png);"></div>
-          <!-- End image-block -->
-          <div class="col-md-7">
-            <div class="info-block sm-mb30">
-              <h3>who we are</h3>
-              <p>
-                Pellentesque vitae feugiat nisi, et haretra eros. Cras vehicula dignissim augue
-                vitae efficitur. Aliquam erat volutpat. Nulla facilisi. onec ut felis eget
-                turpis tempus mattis. Proin aliquet nec erat at laoreet. Ut justo ligula,
-                finibus hendrerit sapien et, gravida aliquam urna. Pellentesque habitant morbi
-                tristique senectus et netus et malesuada fames ac turpis egestas. Fusce quis
-                felis nec dolor interdum lacinia.
-              </p>
-            </div>
-            <!-- End info-block -->
-
-          </div>
-
-        </div>
-        <!-- End info-block-wrap -->
-      </div>
-
-    </div>
-    <!-- End container -->
-
-    <div class="container">
-
-      <div class="love-block">
-        <h2 data-sr>idea + design + development =
-          <i class="fa fa-fw fa-heart-o"></i>
-        </h2>
-      </div>
-      <!-- End love-block -->
-
-    </div>
-    <!-- End container -->
-  </section>
 
   <!-- ************************ -->
   <!--   SEPARATOR              -->
   <!-- ************************ -->
 
   <div class="container">
-    <div class="sep-line"></div>
+    <div class="sep-line-bushi"></div>
   </div>
   <!-- End container -->
 
   <!-- ************************ -->
   <!--   SECTION SERVICES       -->
   <!-- ************************ -->
-
-  <section class="pt150 pb150">
+<div class="craxy-line"></div>
+  <section class="pt100 pb50" id="what_we_do">
     <div class="container">
 
       <div class="section-title">
-        <h2 data-sr>what we do</h2>
+        <div class="title">What We Do</div>
 
         <div class="row">
           <div class="col-md-8 col-md-offset-2">
-            <em data-sr="wait .2s">Suspendisse potenti. In dignissim quis turpis nec
-              egestas. Curabitur faucibus sollicitudin magna, mattis sagittis erat tempus
-              eget.</em>
+            <em data-sr="wait .2s">We are ‘blockchain agnostic’. We leverage several different platforms for different use-cases. The bulk of our experience lies in the Bitcoin, Ethereum, and Hyperledger blockchain infrastructures.</em>
           </div>
         </div>
 
@@ -175,24 +126,18 @@
 
           <div class="owl-item">
             <div class="col-md-5">
-              <img src="assets/images/portfolio-style-one/single5.jpg" alt="image">
+              <%= image_tag 'digital_currency.jpg' %>
             </div>
             <div class="col-md-6 col-md-offset-1">
-              <h2 class="uppercase">01. graphic design</h2>
-
-              <p>Vestibulum eu ante eget metus consequat tincidunt id a metus. Curabitur
-                bibendum quam porta, pharetra diam quis, porta lacus. Sed augue ex, tempor vitae
-                rutrum vel, congue consequat tortor. Cras quis diam fermentum, ultrices leo at,
-                ornare enim.
+              <h4 class="sub_title">01. Digital Currency
+                 <div class="crazy-borderv2"></div>
+              </h4>
+              <p class='text black' >We use and build open source protocols that leverage the power of blockchain and smart contracts to create cheap, fast and private transactions. These include consensus mechanisms, wallet development and ancillary functionality.
               </p>
 
-              <p>Duis tincidunt, eros at feugiat efficitur, metus nulla sagittis neque, eget
-                feugiat orci tellus vitae enim. Pellentesque volutpat dolor purus, ut tincidunt
-                eros vestibulum vitae.</p>
-
               <div class="mt40">
-                <a href="/our_work" class="btn animsition-link line-hor">
-                  <span>view works</span>
+                <a href="#contact_us" class="btn line-hor">
+                  <span>Contact us</span>
                 </a>
               </div>
 
@@ -202,24 +147,19 @@
 
           <div class="owl-item">
             <div class="col-md-5">
-              <img src="assets/images/portfolio-style-one/single6.jpg" alt="image">
+              <%= image_tag 'financial_networks.jpg' %>
             </div>
             <div class="col-md-6 col-md-offset-1">
-              <h2 class="uppercase">02. web design</h2>
+              <h4 class="sub_title">02. Blockchain Applications
+                 <div class="crazy-borderv2"></div>
+              </h4>
 
-              <p>Vestibulum eu ante eget metus consequat tincidunt id a metus. Curabitur
-                bibendum quam porta, pharetra diam quis, porta lacus. Sed augue ex, tempor vitae
-                rutrum vel, congue consequat tortor. Cras quis diam fermentum, ultrices leo at,
-                ornare enim.
+              <p class='text black' >User adoption and application innovations is driving the need for more secure and robust infrastructures. Blockchain provides robust security, transparency, and increases shareholder value all around.
               </p>
-
-              <p>Duis tincidunt, eros at feugiat efficitur, metus nulla sagittis neque, eget
-                feugiat orci tellus vitae enim. Pellentesque volutpat dolor purus, ut tincidunt
-                eros vestibulum vitae.</p>
-
+              
               <div class="mt40">
-                <a href="/our_work" class="btn animsition-link line-hor">
-                  <span>view works</span>
+                <a href="#contact_us" class="btn line-hor">
+                  <span>Contact us</span>
                 </a>
               </div>
 
@@ -229,24 +169,19 @@
 
           <div class="owl-item">
             <div class="col-md-5">
-              <img src="assets/images/portfolio-style-one/single7.jpg" alt="image">
+              <%= image_tag 'blockchain_applications.jpg' %>
             </div>
             <div class="col-md-6 col-md-offset-1">
-              <h2 class="uppercase">03. branding</h2>
+              <h4 class="sub_title">03. Financial Networks
+                 <div class="crazy-borderv2"></div>
+              </h4>
 
-              <p>Vestibulum eu ante eget metus consequat tincidunt id a metus. Curabitur
-                bibendum quam porta, pharetra diam quis, porta lacus. Sed augue ex, tempor vitae
-                rutrum vel, congue consequat tortor. Cras quis diam fermentum, ultrices leo at,
-                ornare enim.
+              <p class='text black'>We are researching Layer 2 and Sidechain applications to support Layer 1 scalability. These protocols will afford users and institutions the ability to leverage the power of digital assets across blockchains to provide liquidity through the bridging of disparate markets.
               </p>
 
-              <p>Duis tincidunt, eros at feugiat efficitur, metus nulla sagittis neque, eget
-                feugiat orci tellus vitae enim. Pellentesque volutpat dolor purus, ut tincidunt
-                eros vestibulum vitae.</p>
-
               <div class="mt40">
-                <a href="/our_work" class="btn animsition-link line-hor">
-                  <span>view works</span>
+                <a href="#contact_us" class="btn line-hor">
+                  <span>Contact us</span>
                 </a>
               </div>
 
@@ -274,189 +209,266 @@
   <!-- ************************ -->
   <!--   COUNTERS               -->
   <!-- ************************ -->
-
-  <section
-    class="counters jarallax pt100 pb100"
-    style="background-image: url(assets/images/bg4.png);">
-    <div class="overlay"></div>
-
-    <div class="container">
-      <div class="row">
-
-        <div class="counter-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-            <div class="item-head">
-              <i class="cr-check"></i>
-            </div>
-            <h6>1245</h6>
-            <p>working hours</p>
-          </div>
-        </div>
-        <!-- End counter-item -->
-        <div class="counter-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-
-            <div class="item-head">
-              <i class="cr-send"></i>
-            </div>
-            <h6>648</h6>
-            <p>project completed</p>
-          </div>
-        </div>
-        <!-- End counter-item -->
-
-        <div class="counter-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-            <div class="item-head">
-              <i class="cr-cup"></i>
-            </div>
-            <h6>576</h6>
-            <p>cups of tea</p>
-          </div>
-        </div>
-        <!-- End counter-item -->
-
-        <div class="counter-item sm-mb40" data-sr>
-          <div class="col-md-3 col-sm-6">
-            <div class="item-head">
-              <i class="cr-heart"></i>
-            </div>
-            <h6>632</h6>
-            <p>happy clients</p>
-          </div>
-        </div>
-        <!-- End counter-item -->
-      </div>
-    </div>
-    <!-- End container -->
-
-  </section>
-
+<div class="container">
+  <div class="sep-line-bushi"></div>
+</div>
   <!-- ************************ -->
   <!--   OUR WORKS              -->
   <!-- ************************ -->
 
-  <section class="pt150 pb150">
+  <section class="pt150 pb150" id="our_team">
+
     <div class="container">
 
-      <div class="section-title">
-        <h2 data-sr>our works</h2>
+      <div class="section-title-sm">
+        <h4 class="title">meet our team</h2>
+
+        <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+            <p class='text black' >We're a small, agile, coherent team of software developers with a unified obsession with Blockchain. Ask us what get's us out of bed in the morning, you guessed it, Blockchain.</p>
+          </div>
+        </div>
+
       </div>
     </div>
     <!-- End container -->
 
     <div class="container">
-      <div class="row">
-        <div class="col-sm-12">
-          <div class="filters-wrap pt5">
+      <div class="row pb50">
+        <div class="col-sm-4">
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'sam.jpg'  %>
 
-            <div class="text-center">
-              <ul class="list-none filters">
-                <li class="active-filter" data-filter="*">
-                  <span>all</span>
-                </li>
-                <li data-filter=".f_web_design">
-                  <span>web design</span>
-                </li>
-                <li data-filter=".f_development">
-                  <span>development</span>
-                </li>
-                <li data-filter=".f_graphic_design">
-                  <span>graphic design</span>
-                </li>
-                <li data-filter=".f_branding">
-                  <span>branding</span>
-                </li>
-                <li data-filter=".f_photography">
-                  <span>photography</span>
-                </li>
-              </ul>
-              <!-- End filters -->
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/samabbassi/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/samabbassi">
+                      <i class="fa fa-fw fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
 
+              <!-- End social-wrap -->
             </div>
-
+            <!-- End team-header -->
+            <div class="team-footer">
+              <h6>Sam Abbassi 
+              </h6>
+              <p class='text black' > Co-Founder / Systems Engineering<br/>
+                Economics, Neuroscience</p>
+            </div>
+            <!-- End team-footer -->
           </div>
-          <!-- End filters-wrap -->
+          <!-- End team-item -->
+        </div>
+
+        <div class="col-sm-4">
+
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'chris.jpg'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/christopherarguello/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End social-wrap -->
+            </div>
+            <!-- End team-header -->
+            <div class="team-footer">
+              <h6>Christopher Arguello
+              </h6>
+              <p class='text black' >Co-Founder / Engineering Lead <br/>
+               Project Management, Manufacturing </p>
+            </div>
+            <!-- End team-footer -->
+          </div>
+          <!-- End team-item -->
+        </div>
+        <div class="col-sm-4">
+
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'kevin.jpg'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/kevinvanderpoll/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End social-wrap -->
+            </div>
+            <!-- End team-header -->
+            <div class="team-footer">
+              <h6>Kevin Van Der Poll
+              </h6>
+              <p class='text black' > Co-Founder / Protocol Development<br/>
+               Video Game Design, Hospitality </p>
+            </div>
+            <!-- End team-footer -->
+          </div>
+          <!-- End team-item -->
         </div>
       </div>
-    </div>
-    <!-- End container -->
+      <div class="row pb50">
+        <div class="col-sm-4">
 
-    <div class="container">
-      <div class="row">
-        <div class="crazy-portfolio-masonry-wrapper" data-col="3">
-          <div class="crazy-portfolio-list">
-
-            <div class="crazy-portfolio-item f_web_design f_photography">
-              <a href="/work" class="animsition-link">
-                <div
-                  class="image-wrap"
-                  style="background-image: url(assets/images/portfolio-style-three/1.jpg);"></div>
-                <div class="overlay-color"></div>
-              </a>
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'luis.jpg'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/luisthomas/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End social-wrap -->
             </div>
-            <!-- End crazy-portfolio-item -->
-
-            <div class="crazy-portfolio-item f_branding">
-              <a href="/work" class="animsition-link">
-                <div
-                  class="image-wrap"
-                  style="background-image: url(assets/images/portfolio-style-three/2.jpg);"></div>
-                <div class="overlay-color"></div>
-              </a>
+            <div class="team-footer">
+              <h6>Luis Thomas
+              </h6>
+              <p class='text black' >Wallet Development <br/>
+               Computer Science</p>
             </div>
-            <!-- End crazy-portfolio-item -->
-
-            <div class="crazy-portfolio-item f_web_design">
-              <a href="/work" class="animsition-link">
-                <div
-                  class="image-wrap"
-                  style="background-image: url(assets/images/portfolio-style-three/3.jpg);"></div>
-                <div class="overlay-color"></div>
-              </a>
-            </div>
-            <!-- End crazy-portfolio-item -->
-
-            <div class="crazy-portfolio-item f_development">
-              <a href="/work" class="animsition-link">
-                <div
-                  class="image-wrap"
-                  style="background-image: url(assets/images/portfolio-style-three/4.jpg);"></div>
-                <div class="overlay-color"></div>
-              </a>
-            </div>
-            <!-- End crazy-portfolio-item -->
-
-            <div class="crazy-portfolio-item f_graphic_design">
-              <a href="/work" class="animsition-link">
-                <div
-                  class="image-wrap"
-                  style="background-image: url(assets/images/portfolio-style-three/5.jpg);"></div>
-                <div class="overlay-color"></div>
-              </a>
-            </div>
-            <!-- End crazy-portfolio-item -->
-
-            <div class="crazy-portfolio-item f_branding">
-              <a href="/work" class="animsition-link">
-                <div
-                  class="image-wrap"
-                  style="background-image: url(assets/images/portfolio-style-three/6.jpg);"></div>
-                <div class="overlay-color"></div>
-              </a>
-            </div>
-            <!-- End crazy-portfolio-item -->
-
+            <!-- End team-footer -->
           </div>
-          <!-- End crazy-portfolio-list -->
+          <!-- End team-item -->
         </div>
-        <!-- ENd crazy-portfolio-masonry-wrapper -->
+          <div class="col-sm-4">
 
-        <div class="mt80 text-center">
-          <a href="/our_work" class="btn animsition-link line-vert" data-sr>
-            <span>see all works</span>
-          </a>
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'nicolas.jpg'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/nlevo/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End social-wrap -->
+            </div>
+            <!-- End team-header -->
+            <div class="team-footer">
+              <h6>Nicolas Levo
+              </h6>
+              <p class='text black' >Protocol Development<br/>
+               Computer Science, Hospitality </p>
+            </div>
+            <!-- End team-footer -->
+          </div>
+          <!-- End team-item -->
         </div>
+
+        <div class="col-sm-4">
+
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'andres.jpg'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/andres-rojas-a82a3aaa/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End social-wrap -->
+            </div>
+            <!-- End team-header -->
+            <div class="team-footer">
+              <h6>Andres Rojas
+              </h6>
+              <p class='text black' >Full Stack Developer <br/>
+              Web Development, Education</p>
+            </div>
+            <!-- End team-footer -->
+          </div>
+          <!-- End team-item -->
+        </div>
+
+        <div class="col-sm-4">
+
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'ariel.jpg' %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/ariel-deschapell/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="https://twitter.com/NotASithLord/">
+                      <i class="fa fa-fw fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              
+              <!-- End social-wrap -->
+            </div>
+            <!-- End team-header -->
+            <div class="team-footer">
+              <h6>Ariel Deschapelle
+              </h6>
+              <p class='text black' >Crypto Developer <br/>
+              Journalism, Education</p>
+            </div>
+            <!-- End team-footer -->
+          </div>
+          <!-- End team-item -->
+        </div>
+
+        <div class="col-sm-4">
+
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'katya.jpg'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="https://www.linkedin.com/in/katyademina/">
+                      <i class="fa fa-fw fa-linkedin"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+              <!-- End social-wrap -->
+            </div>
+            <!-- End team-header -->
+            <div class="team-footer">
+              <h6>Katya Demina
+              </h6>
+              <p class='text black' >PR/Marketing <br/>
+              </p>
+            </div>
+            <!-- End team-footer -->
+          </div>
+          <!-- End team-item -->
+        </div>
+
 
       </div>
     </div>
@@ -466,11 +478,12 @@
 
   <!-- ************************ -->
   <!--   TESTIMONIAL            -->
-  <!-- ************************ -->
 
+
+<!-- 
   <section
     class="testimonial-wrap jarallax pt150 pb150"
-    style="background-image: url(assets/images/testimonial-bg2.png);">
+    style="background-image: url(<%= asset_path 'testimonial-bg2.png' %>);">
     <div class="overlay"></div>
     <div class="container-fluid">
       <div class="row">
@@ -479,11 +492,11 @@
           <div class="owl-item" data-sr>
 
             <div class="avatar-wrap">
-              <img src="assets/images/testimonial-01.png" alt="avatar">
+              <%= image_tag 'testimonial-01.png' %>
             </div>
 
             <h3>Diva span</h3>
-            <p>Mauris interdum blandit enim et elementum. Suspendisse potenti. Mauris nulla
+            <p >Mauris interdum blandit enim et elementum. Suspendisse potenti. Mauris nulla
               ipsum, euismod et lacinia em.
               <br>
               Donec lobortis magna sed urna cursus, vitae ultrices sapien pellentesque.
@@ -491,12 +504,11 @@
               In posuere, risus sed aliquet varius, tortor neque.</p>
 
           </div>
-          <!-- End owl-item -->
 
           <div class="owl-item" data-sr>
 
             <div class="avatar-wrap">
-              <img src="assets/images/testimonial-02.png" alt="avatar">
+              <%= image_tag 'testimonial-02.png' %>
             </div>
 
             <h3>Paulo Aramella</h3>
@@ -508,22 +520,21 @@
               In posuere, risus sed aliquet varius, tortor neque.</p>
 
           </div>
-          <!-- End owl-item -->
 
         </div>
-        <!-- End owl-testimonial-slider -->
 
       </div>
     </div>
-    <!-- End container-fluid -->
+
 
     <div class="testimonial-nav">
       <i class="lnr lnr-arrow-left pull-left"></i>
       <i class="lnr lnr-arrow-right pull-right"></i>
     </div>
-    <!-- End testimonial-nav -->
+
 
   </section>
+ -->
 
 </main>
 
@@ -532,6 +543,97 @@
 <!-- ************************ -->
 
 <div class="container">
+  <div class="sep-line-bushi"></div>
+</div>
+<!--
+<div class="container">
   <div class="sep-line"></div>
 </div>
+-->
 <!-- End container -->
+
+
+
+
+
+
+
+
+
+
+
+<!--
+      <div class="col-sm-4">
+
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'team_001.png'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-fw fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-fw fa-dribbble"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-fw fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+
+            </div>
+
+            <div class="team-footer">
+              <h6>Ariel Deschapelle
+              </h6>
+              <p class='text black' >Systems Engineering <br/>
+               Bitcoin, Journalism </p>
+            </div>
+
+          </div>
+        </div>
+-->
+
+<!--
+        <div class="col-sm-4">
+
+          <div class="team-item sm-mb40">
+            <div class="team-header">
+              <%= image_tag 'team_001.png'  %>
+              <div class="social-wrap">
+                <ul class="list-none">
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-fw fa-facebook"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-fw fa-dribbble"></i>
+                    </a>
+                  </li>
+                  <li>
+                    <a href="#">
+                      <i class="fa fa-fw fa-twitter"></i>
+                    </a>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="team-footer">
+              <h6>Katya Demina
+              </h6>
+              <p class='text black' >PR Management <br/>
+                </p>
+            </div>
+          </div>
+        </div>
+
+        -->

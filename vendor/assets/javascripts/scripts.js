@@ -161,11 +161,11 @@ jQuery.noConflict()(function($) {
       });
 
       $('.typed-two').typed({
-        strings: ['creative', 'hard-working', 'useful', 'responsible'],
+        strings: ['Bushido', 'innovation', 'disruption'],
         typeSpeed: 50,
-        backSpeed: 20,
+        backSpeed: 30,
         loop: true,
-        backDelay: 2500,
+        backDelay: 3500,
         showCursor: false,
       });
     }
@@ -231,7 +231,7 @@ jQuery.noConflict()(function($) {
       data_query['ajax'] = true;
 
       //show ajax loader
-      showLoader(form_el);
+      // showLoader(form_el);
 
       //send the request
       $.ajax({

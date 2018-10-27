@@ -1,5 +1,5 @@
 $(function(){
-  $(document).on('click', "#subscribe-user", function(e){
+  $(document).on('click', "#contact_user", function(e){
     e.preventDefault();
     var self = $(this);
 
@@ -8,7 +8,7 @@ $(function(){
       url: self.data('url'),
       dataType: 'JSON',
       data: {
-        subscribe_user: {
+        contact: {
           first_name: $("#first_name").val(),
           last_name: $("#last_name").val(),
           email: $("#email").val(),

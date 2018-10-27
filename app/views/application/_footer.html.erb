@@ -11,7 +11,7 @@
       <div class="col-sm-8 col-sm-offset-2 pt80 pb80" data-sr="wait .2s">
         <div class="row">
 
-          <%= form_tag(subscribe_users_path,class: 'contact-form form-black') do  %>
+          <%= form_tag(contacts_path, class: 'contact-form form-black') do  %>
 
             <div class="form-control">
               <%= text_field_tag :first_name, nil, class: 'contact-form-name', placeholder: 'First Name...', required: true %>
@@ -42,7 +42,7 @@
           <% end %>
 
           <div class="spacer-half"></div>
-          <button class="btn line-hor" id="subscribe-user" data-url="<%= subscribe_users_path %>">
+          <button class="btn line-hor" id="contact_user" data-url="<%= contacts_path %>">
           <i class="mail icon"></i>
             <span>Submit</span>
           </button>

@@ -1,0 +1,13 @@
+## Default Variables
+FROM_EMAIL: 'sales@bushidolab.com'
+HOST: ''
+
+## For Trigger Emails
+TO_EMAILS: ['sales@bushidolab.com', 'sales@bushidolab.com', 'sales@bushidolab.com']
+
+## SMTP Credentials
+SMTP_ADDRESS: ''
+SMTP_PORT: ''
+SMTP_DOMAIN: ''
+SMTP_USER_NAME: ''
+SMTP_PASSWORD: ''

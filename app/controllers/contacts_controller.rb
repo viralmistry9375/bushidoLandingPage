@@ -1,6 +1,6 @@
 class ContactsController < ApplicationController
   def create
-    ContactMailer.contact_send(contact_params).deliver
+    ContactMailer.contact_send(contact_params).deliver_now
   end
 
   private

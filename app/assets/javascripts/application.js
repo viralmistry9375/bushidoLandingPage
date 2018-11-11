@@ -16,14 +16,14 @@
 //= require_tree .
 
 $(function() {
-   $(window).scroll(function () {
-      if ($(this).scrollTop() > 820) {
-         $('.crazy-navbar').addClass('changeColor')
-      }
-      if ($(this).scrollTop() < 820) {
-         $('.crazy-navbar').removeClass('changeColor')
-      }
-   });
+   // $(window).scroll(function () {
+   //    if ($(this).scrollTop() > 820) {
+   //       $('.crazy-navbar').addClass('changeColor')
+   //    }
+   //    if ($(this).scrollTop() < 820) {
+   //       $('.crazy-navbar').removeClass('changeColor')
+   //    }
+   // });
 
    $('a').click(function(){
    	debugger
@@ -31,4 +31,3 @@ $(function() {
    	$('body').addClass('fadeIn')
    })
 });
-

@@ -1,16 +1,16 @@
 <% current_item = "current-menu-item" %>
-<li class="<%= @site.slug == 'home' && current_item %>">
-  <a href="/" class="">01. Home</a>
+<li class="<%= controller_name == 'home' && action_name == 'index' && current_item %>">
+  <a href="<%= root_path %>" class="">01. Home</a>
 </li>
-<li class="<%= @site.slug == 'about_us' && current_item %>">
-  <a href="#about_us">02. About Us</a>
+<li class="<%= controller_name == 'home' && action_name == 'about_us' && current_item %>">
+  <a href="<%= about_us_path %>">02. About Us</a>
 </li>
-<li class="<%= @site.slug == 'our_work' && current_item %>">
-  <a href="#what_we_do" class="">03. What We Do</a>
+<li class="<%= controller_name == 'home' && action_name == 'what_we_do' && current_item %>">
+  <a href="<%= what_we_do_path %>" class="">03. What We Do</a>
 </li>
-<li class="<%= @site.slug == 'contact_us' && current_item %>">
-  <a href="#our_team" class="">04. Our Team</a>
+<li class="<%= controller_name == 'home' && action_name == 'our_team' && current_item %>">
+  <a href="<%= our_team_path %>" class="">04. Our Team</a>
 </li>
-<li class="<%= @site.slug == 'contact_us' && current_item %>">
-  <a href="#contact_us" class="">05. Contact Us</a>
+<li class="<%= controller_name == 'contacts' && action_name == 'index' && current_item %>">
+  <a href="<%= contact_us_path %>" class="">05. Contact Us</a>
 </li>

@@ -2,57 +2,7 @@
 <!--   FOOTER                 -->
 <!-- ************************ -->
 
-<footer class="<%= @site.slug != 'contact_us' && 'pt150'%>" id="contact_us">
-  <% unless @site.slug == 'contact_us' %>
-    <div class="container"  >
-
-      <div class="title">contact us</div>
-
-      <div class="col-sm-8 col-sm-offset-2 pt80 pb80" data-sr="wait .2s">
-        <div class="row">
-
-          <%= form_tag(contacts_path, class: 'contact-form form-black') do  %>
-
-            <div class="form-control">
-              <%= text_field_tag :first_name, nil, class: 'contact-form-name', placeholder: 'First Name...', required: true %>
-              <div class="line-input"></div>
-            </div>
-            <div class="spacer-half"></div>
-            <div class="form-control">
-              <%= text_field_tag :last_name, nil, class: 'contact-form-message', placeholder: 'Last Name...', required: true %>
-              <div class="line-input"></div>
-            </div>
-            <div class="spacer-half"></div>
-            <div class="form-control">
-              <%= email_field_tag :email, nil, class: 'contact-form-email', placeholder: 'Email...', required: true %>
-              <div class="line-input"></div>
-              <div class="ui left corner label">
-                <i class="asterisk icon"></i>
-              </div>
-            </div>
-
-            <!-- End  -->
-            <div class="col-sm-12">
-              <div class="text-center">
-                <p class="return-msg">&nbsp;</p>
-              </div>
-
-            </div>
-
-          <% end %>
-
-          <div class="spacer-half"></div>
-          <button class="btn line-hor" id="contact_user" data-url="<%= contacts_path %>">
-          <i class="mail icon"></i>
-            <span>Submit</span>
-          </button>
-          <!-- End contact-form -->
-        </div>
-      </div>
-    </div>
-    <!-- End container -->
-  <% end %>
-
+<footer>
   <div class="footer-inner clearfix">
     <div class="container">
 
